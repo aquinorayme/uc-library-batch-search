@@ -31,7 +31,7 @@ python3 check_uc_library.py input_file.xlsx output_file.xlsx
 * **`--delay`:** Time in seconds to wait between API calls to prevent rate-limiting (defaults to 1.0).
 * **`--limit`:** Stop the script after processing a specific number of rows (useful for testing).
 
-## How It Works (The Logic)
+## How It Works
 1. **Data Extraction:** The script reads the input Excel file and isolates rows that have both a Title and an Author.
 2. **API Query:** It sends a contains query to the Primo VE pnxs endpoint, restricted to the `Default_UCLibrarySearch` tab.
 3. **Title Check:** The exact phrase from the spreadsheet must exist word-for-word inside the library's title string (Score: 100 or 0).
